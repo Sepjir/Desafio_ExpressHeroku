@@ -1,3 +1,4 @@
+0. Deploy en Heroku: https://app-desafio2-heroku.herokuapp.com/
 1. Crear una cuenta en Heroku https://signup.heroku.com/
 2. Siga los pasos que indique como verificación de email
 3. Cuando cree su nueva cuenta.
