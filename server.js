@@ -3,6 +3,7 @@ const app = express()
 const exphbs = require("express-handlebars")
 const moment = require("moment")
 const {nuevoUsuario, getUsers, deleteUser} = require("./consultas")
+const port = process.env.PORT || 5000
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
@@ -58,4 +59,4 @@ app.get("/users/:id", async (req, res) => {
     res.redirect("/")
 })
 
-app.listen(4000, () => console.log("Servidor levantado en dirección: http://localhost:4000/"))
+app.listen(port, () => console.log(`Servidor levantado en dirección: http://localhost:${port}/`))
